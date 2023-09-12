@@ -1,15 +1,11 @@
-import { useEffect, useState } from "react"
 import Line from "./Line"
-import { emojiList } from "../assets/emojiList"
 
-const EmojisList = ({search}) => {
+const EmojisList = ({emojiList, search}) => {
 
     return (
         <ul>
             {emojiList.map((emoji, index) => {
-                console.log(emoji)
-                emoji.keywords.includes(search) ?
-                (
+                return emoji.keyword.includes(search) ?   (
                     <Line key={index} emoji={emoji} />
                 ) : null
             })}            
