@@ -1,8 +1,7 @@
 import '../App.css'
-function Line({emoji}) {
-
+function Line({emoji, handleClickEmoji}) {
   return (
-    <li>
+    <li onClick={handleClickEmoji}>
       {emoji.symbol} {emoji.title}
       <span>Click to copy !</span>
     </li>

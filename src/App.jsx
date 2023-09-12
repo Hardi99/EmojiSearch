@@ -15,7 +15,6 @@ function App() {
   const handleEmoji = (event) => {
       setSearch(event.target.value)
   }
-    console.log(emojiList)
   //-4 Transmettre le nouveau tableau au state data
 
   return (
