@@ -41,10 +41,26 @@
   color: #888;
 }
 
-span {
+li {
   background-color: #FCFBFB;
   font-size: 25px;
   margin: 10px 0;
+  list-style-type: none;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+
+li > span {
+  justify-content: flex-end;
+  display: none;
+  font-size: 15px;
+}
+
+li:hover > span {
+  display: block;
 }
 
 input {
@@ -54,6 +70,6 @@ input {
   border: none;
 }
 
-span:hover {
+li:hover {
   background-color: #F8EFEF;
 }

@@ -2,7 +2,10 @@ import '../App.css'
 function Line({emoji}) {
 
   return (
-    <span> {emoji.symbol} {emoji.title} </span>
+    <li>
+      {emoji.symbol} {emoji.title}
+      <span>Click to copy !</span>
+    </li>
   )
 }
 
