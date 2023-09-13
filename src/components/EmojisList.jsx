@@ -13,7 +13,7 @@ const EmojisList = ({emojiList, search}) => {
     return (
         <ul>
             {results.map((emoji, index) => {
-
+                // C'est la fonction handleClikEmoji qui permet de copier un emoji lors d'un event click
                 const handleClickEmoji = () => {
                     navigator.clipboard.writeText(emoji.symbol)
                 }

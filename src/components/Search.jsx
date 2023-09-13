@@ -1,4 +1,4 @@
-const Search = ({search, setSearch, handleEmoji}) => {
+const Search = ({search, handleEmoji}) => {
     return (
         <header>
             <h1>😎 EmojiSearch 😎</h1>
